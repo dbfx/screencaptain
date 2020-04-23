@@ -1,4 +1,5 @@
-![Screen Captain](https://github.com/dbfx/screencaptain/raw/master/images/logo.png "Screen Captain")
+![Screen Captain]( =250x)
+<img src="(https://github.com/dbfx/screencaptain/raw/master/images/logo-dark.png)" alt="Screen Captain" width="150" />
 
 ## Screen Captain
 ### Free screen capture for web developers.
