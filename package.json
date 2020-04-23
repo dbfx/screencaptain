@@ -1,6 +1,6 @@
 {
   "name": "screencaptain",
-  "productName": "Screen Captain",
+  "productName": "ScreenCaptain",
   "version": "1.0.1",
   "description": "Free desktop screen recording for web developers.",
   "main": "src/index.js",
@@ -52,7 +52,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Screen Captain",
+            "name": "ScreenCaptain",
             "setupIcon": "images/icon.ico"
           }
         },
@@ -62,21 +62,21 @@
             "darwin"
           ],
           "config": {
-            "name": "Screen Captain",
+            "name": "ScreenCaptain",
             "setupIcon": "images/icon.icns"
           }
         },
         {
           "name": "@electron-forge/maker-deb",
           "config": {
-            "name": "Screen Captain",
+            "name": "ScreenCaptain",
             "setupIcon": "images/icon.png"
           }
         },
         {
           "name": "@electron-forge/maker-rpm",
           "config": {
-            "name": "Screen Captain",
+            "name": "ScreenCaptain",
             "setupIcon": "images/icon.png"
           }
         }
