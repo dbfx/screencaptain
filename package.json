@@ -20,34 +20,25 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "make_targets": {
-        "win32": [
-          "squirrel"
-        ],
-        "darwin": [
-          "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
-        ] 
-      },
       "packagerConfig": {
         "appCopyright": "Copyright (C) 2020 Dave Blakey.",
         "icon": "images/icon.png"
       },
-      "electronWinstallerConfig": {
-        "name": ""
-      },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
-      "github_repository": {
-        "owner": "dbfx",
-        "name": "screencaptain"
-      },
       "windowsStoreConfig": {
         "packageName": "screenCaptain"
       },
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "dbfx",
+              "name": "screencaptain"
+            },
+            "prerelease": true
+          }
+        }
+      ],
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -95,6 +86,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.50",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
     "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "@electron-forge/publisher-github": "^6.0.0-beta.50",
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.2",
     "electron": "8.2.3",

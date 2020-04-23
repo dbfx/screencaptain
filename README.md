@@ -12,7 +12,7 @@ It's primarily designed to be simple and easy to use, with a focus on web develo
 It's free to use both personally and professionally, and you can feel free to contribute any improvements. 
 
 ### Download
-[Windows Installer](https://blakey.co/screencaptain/downloads/windows)
+[Releases](https://github.com/dbfx/screencaptain/releases)
 
 
 ### Links
