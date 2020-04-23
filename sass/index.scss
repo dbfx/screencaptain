@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+// Bulma customizations
+$body-background-color: #282c34;
+$text: #ffffff;
+$body-color: #ffffff;
+$text-strong: #ffffff;
+$primary: #21252b;
+
+// Bulma modules
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#mainHero {
+  padding-bottom: 0;
+}  
+
+#close {  
+  z-index: 9999;  
+}
+
+#titleBar {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #171a1f;
+  -webkit-app-region: drag;
+  color: white;
+  z-index: 9998;
+}
+
+#titleBar #icons {
+  top: 5px; 
+  right: 5px;
+  -webkit-app-region: no-drag;
+  height: 40px; width: 50px;
+  position: absolute;
+}
+
+#titleBar #titleLogo {
+  max-width: 22px; 
+  max-height: 22px; 
+}  
+
+#logo {
+  max-width: 200px;
+}
+
+#titleBar span {
+  position: relative; 
+  top: -4px;
+  left: 5px;
+}  
+
+html {
+  -webkit-user-select: none;  
+  background: #282c34;
+  animation: fadein 0.5s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+webview {
+  display: block;
+  border: none;
+  height: 80vh;
+  width: 95vw;
+}
+
+#videoHolder {
+  margin: 20px;
+  margin-left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+video {
+  max-width: 350px;
+  max-height: 350px;
+  border: 5px solid #21252b;
+  border-radius: 3px;
+}
+
+a {
+  color: #56b6c2;
+}
+
+a:hover {
+  color: #e06c75;
+}

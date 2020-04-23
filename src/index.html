@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Screen Captain</title>
+      
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>    
+    <div id="titleBar">      
+      <div id="icons">
+        <a id="close" class="delete is-large"></a>
+      </div>
+      <p class="content is-4 is-bold"><img id="titleLogo" src="../images/square.png"><span>Screen Captain</span></p>      
+    </div>
+
+    <section class="hero is-small is-primary">
+      <div class="hero-body" id="mainHero">
+        <div class="container">
+          <h1 class="title">
+            <img id="logo" src="../images/logo.png">
+          </h1>                      
+        </div>
+      </div>
+    </section>
+    <section class="hero is-small is-primary" id="heroSection">
+      <div class="hero-body" id="subHero">
+        <div class="container">
+          <h1 class="subtitle" id="subtitle">
+            Select a window...
+          </h1>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+    <div class="container">
+      <div id="videoHolder" class="hidden">
+        <h4 class="subtitle is-4">Video Preview</h4>
+        <video></video>
+      </div>
+      
+      <br /><br />
+      <button id="videoSelectBtn" class="button is-large is-dark">Select a window to record...</button>
+      <br /><br />
+
+      <div id="introText">
+        <br /><br />
+        <h5 class="subtitle is-5">Start recording</h5>
+        <p>
+          To start recording click the button above and select a window or your whole desktop. You 
+          will then see a preview and can click the Record button. Once you are done click Stop 
+          and choose a path to save the file.
+        </p>
+
+        <br /><br />
+
+        <h5 class="subtitle is-5">Free modern screen recording</h5>
+        <p>
+          Screen Captain is a free app made by Dave Blakey. It allows you to record your screen 
+          or a specific window and outputs webm files, primarily for web use. 
+        </p>
+        <p>
+          <a href="#" id="visitWebsite">Visit the website</a> for updates and more.
+        </p>      
+      </div>
+
+      <button id="startBtn" class="hidden button is-primary is-large">
+        <span>
+          Record <strong>Now</strong>
+        </span>
+      </button>
+      <button id="stopBtn" class="hidden button is-warning is-large">
+        <span>
+          <strong>Stop</strong> Recording
+        </span>
+      </button>
+
+      <button id="stopBtn" class="hidden button is-warning">Stop</button>      
+    </section>
+
+
+    <script defer src="render.js"></script>
+  </body>
+</html>
