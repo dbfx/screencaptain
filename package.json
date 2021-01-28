@@ -89,7 +89,7 @@
     "@electron-forge/publisher-github": "^6.0.0-beta.50",
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.2",
-    "electron": "8.2.3",
+    "electron": "9.4.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
